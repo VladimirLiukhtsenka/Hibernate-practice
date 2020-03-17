@@ -1,0 +1,1 @@
+2020-03-09 15:50:00.077 [main] 16352 DEBUG com.liukhtenko.ticket.dao.EntityTransaction - com.liukhtenko.ticket.dao.impl.UserDao@50a7bc6e have a connection: com.liukhtenko.ticket.pool.ProxyConnection@161b062a

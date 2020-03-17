@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.liukhtenko.ticket.entity.ScheduleEntity" table="schedule" schema="university">
+        <id name="id">
+            <column name="id" sql-type="bigint(20)"/>
+        </id>
+        <property name="courseId">
+            <column name="course_id" sql-type="bigint(20)"/>
+        </property>
+        <property name="studentId">
+            <column name="student_id" sql-type="bigint(20)"/>
+        </property>
+    </class>
+</hibernate-mapping>
