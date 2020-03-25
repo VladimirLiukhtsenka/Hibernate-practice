@@ -1,12 +1,21 @@
 package com.liukhtenko.ticket.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.util.Objects;
+
 @Deprecated
-public class Role extends Entity {
+@Entity
+public class Role {
+    @Id
     private long id;
     private String description;
 
     public Role() {
+    }
+
+    public Role(String description) {
+        this.description = description;
     }
 
     public Role(long id, String description) {

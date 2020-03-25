@@ -1,1 +1,58 @@
-2020-03-09 15:50:00.077 [main] 16352 DEBUG com.liukhtenko.ticket.dao.EntityTransaction - com.liukhtenko.ticket.dao.impl.UserDao@50a7bc6e have a connection: com.liukhtenko.ticket.pool.ProxyConnection@161b062a
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into schedule (course_id, student_id, id) values (?, ?, ?)
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update schedule set course_id=?, student_id=? where id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from schedule where id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.liukhtenko.ticket.entity.Role
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from Role where id =?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select role_.id, role_.description as descript2_4_ from Role role_ where role_.id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into Role (description, id) values (?, ?)
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update Role set description=? where id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from Role where id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.liukhtenko.ticket.entity.StudentEntity
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from student where id =?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select studentent_.id, studentent_.name as name2_2_ from student studentent_ where studentent_.id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into student (name, id) values (?, ?)
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update student set name=? where id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from student where id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.liukhtenko.ticket.entity.TeacherEntity
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from teacher where id =?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select teacherent_.id, teacherent_.name as name2_3_, teacherent_.field_of_science as field_of3_3_ from teacher teacherent_ where teacherent_.id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into teacher (name, field_of_science, id) values (?, ?, ?)
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update teacher set name=?, field_of_science=? where id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from teacher where id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: com.liukhtenko.ticket.entity.CourseEntity
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from course where id =?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select courseenti_.id, courseenti_.name as name2_0_, courseenti_.teacher_id as teacher_3_0_ from course courseenti_ where courseenti_.id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into course (name, teacher_id, id) values (?, ?, ?)
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update course set name=?, teacher_id=? where id=?
+2020-03-23 18:10:45.951 [main] 6334 DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from course where id=?
+2020-03-23 18:10:46.294 [main] 6677 DEBUG org.hibernate.orm.query.plan.cache - Starting QueryPlanCache(2048)
+2020-03-23 18:10:46.419 [main] 6802 DEBUG org.hibernate.query.named.NamedQueryRepository - Checking 0 named HQL queries
+2020-03-23 18:10:46.419 [main] 6802 DEBUG org.hibernate.query.named.NamedQueryRepository - Checking 0 named SQL queries
+2020-03-23 18:10:46.450 [main] 6833 INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5bc28f40] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-03-23 18:10:46.528 [main] 6911 DEBUG org.hibernate.mapping.Table - No alter strings for table : course
+2020-03-23 18:10:46.528 [main] 6911 DEBUG org.hibernate.mapping.Table - No alter strings for table : schedule
+2020-03-23 18:10:46.528 [main] 6911 DEBUG org.hibernate.mapping.Table - No alter strings for table : student
+2020-03-23 18:10:46.528 [main] 6911 DEBUG org.hibernate.mapping.Table - No alter strings for table : teacher
+2020-03-23 18:10:46.544 [main] 6927 DEBUG org.hibernate.mapping.Table - No alter strings for table : Role
+2020-03-23 18:10:46.559 [main] 6942 DEBUG org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@5fcfde70
+2020-03-23 18:10:46.559 [main] 6942 DEBUG org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: 83b7daab-9957-447b-8859-f7e566063c42 (<unnamed>)
+2020-03-23 18:10:46.559 [main] 6942 DEBUG org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+2020-03-23 18:10:46.637 [main] 7020 DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2020-03-23 18:10:46.637 [main] 7020 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2020-03-23 18:10:46.637 [main] 7020 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - begin
+2020-03-23 18:10:46.653 [main] 7036 DEBUG org.hibernate.event.internal.AbstractSaveEventListener - Generated identifier: 1, using strategy: org.hibernate.id.Assigned
+2020-03-23 18:10:46.668 [main] 7051 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl - committing
+2020-03-23 18:10:46.668 [main] 7051 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Processing flush-time cascades
+2020-03-23 18:10:46.668 [main] 7051 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Dirty checking collections
+2020-03-23 18:10:46.684 [main] 7067 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+2020-03-23 18:10:46.684 [main] 7067 DEBUG org.hibernate.event.internal.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2020-03-23 18:10:46.684 [main] 7067 DEBUG org.hibernate.internal.util.EntityPrinter - Listing entities:
+2020-03-23 18:10:46.684 [main] 7067 DEBUG org.hibernate.internal.util.EntityPrinter - com.liukhtenko.ticket.entity.Role{description=Robbin, id=1}
+2020-03-23 18:10:46.684 [main] 7067 DEBUG org.hibernate.SQL - insert into Role (description, id) values (?, ?)
+2020-03-23 18:10:46.871 [main] 7254 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+2020-03-23 18:10:46.871 [main] 7254 DEBUG org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+2020-03-23 18:10:46.871 [main] 7254 DEBUG org.hibernate.internal.SessionFactoryImpl - HHH000031: Closing
+2020-03-23 18:10:46.871 [main] 7254 DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@1c8f6a90] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@6892cc6f]
+2020-03-23 18:10:46.871 [main] 7254 DEBUG org.hibernate.service.internal.AbstractServiceRegistryImpl - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2020-03-23 18:10:46.871 [main] 7254 INFO  org.hibernate.orm.connections.pooling - HHH10001008: Cleaning up connection pool [jdbc:mysql://localhost:3306/university?serverTimezone=UTC]
+2020-03-23 18:10:46.871 [main] 7254 DEBUG org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries

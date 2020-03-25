@@ -1,14 +1,24 @@
 package com.liukhtenko.ticket.entity;
 
+import org.hibernate.annotations.Proxy;
+
 import javax.persistence.*;
 import javax.persistence.Entity;
 import java.util.Objects;
 
 @Entity
 @Table(name = "student", schema = "university")
+@Proxy(lazy = false)
 public class StudentEntity {
     private long id;
     private String name;
+
+    public StudentEntity() {
+    }
+
+    public StudentEntity(String name) {
+        this.name = name;
+    }
 
     @Id
     @Column(name = "id", nullable = false)
