@@ -1,2 +1,0 @@
-2020-02-15 23:43:48.748 [main] 2643 DEBUG TestUserService - Impossible to establish AutoCommit to value false!!!!!!!!!
-2020-02-15 23:43:50.825 [main] 4720 DEBUG com.liukhtenko.ticket.dao.EntityTransaction - com.liukhtenko.ticket.dao.impl.UserDao@1e67a849 have a connection: com.liukhtenko.ticket.pool.ProxyConnection@57d5872c

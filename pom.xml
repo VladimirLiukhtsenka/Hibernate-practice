@@ -54,15 +54,15 @@
       <version>1.9.5</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.hibernate.orm</groupId>
-      <artifactId>hibernate-core</artifactId>
-      <version>6.0.0.Alpha4</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.hibernate.orm</groupId>-->
+<!--      <artifactId>hibernate-core</artifactId>-->
+<!--      <version>6.0.0.Alpha4</version>-->
+<!--    </dependency>-->
     <dependency>
       <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-entitymanager</artifactId>
-      <version>5.4.12.Final</version>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.3.2.Final</version>
     </dependency>
   </dependencies>
 

@@ -12,6 +12,7 @@ public class CourseEntity {
     private long teacherId;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     public long getId() {
         return id;
