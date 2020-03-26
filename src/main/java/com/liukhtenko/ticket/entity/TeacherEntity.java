@@ -1,7 +1,7 @@
 package com.liukhtenko.ticket.entity;
 
-import javax.persistence.*;
 import javax.persistence.Entity;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -10,6 +10,14 @@ public class TeacherEntity {
     private long id;
     private String name;
     private String fieldOfScience;
+
+    public TeacherEntity() {
+    }
+
+    public TeacherEntity(String name, String fieldOfScience) {
+        this.name = name;
+        this.fieldOfScience = fieldOfScience;
+    }
 
     @Id
     @Column(name = "id", nullable = false)
